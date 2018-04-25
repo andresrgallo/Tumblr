@@ -37,7 +37,7 @@
 						</div>
 					<% end %>
      </div>
-		
+		<p>Signed in as: <%= current_user.email %></p>
 		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert") %>
 		<% end %>
